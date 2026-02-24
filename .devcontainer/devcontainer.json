@@ -1,0 +1,30 @@
+{
+	"name": "ROS 2 Jazzy",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "rmf-jazzy-dev",
+	"workspaceFolder": "/home/dev/rmf_ws",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-themes",
+				"twxs.cmake",
+				"ms-python.python",
+				"ms-iot.vscode-ros"
+			]
+		}
+	},
+	"remoteUser": "dev",
+	"postCreateCommand": "cd src/rmf-web && pnpm install",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "false",
+            "username": "dev",
+            "userUid": "1000",
+            "userGid": "1000"
+        }
+    },    "forwardPorts": [5173],	"mounts": [
+		"source=${localEnv:HOME}/.gitconfig,target=/home/dev/.gitconfig,type=bind,consistency=cached",
+		"source=${localEnv:HOME}/.config/gh,target=/home/dev/.config/gh,type=bind,consistency=cached"
+	]
+}

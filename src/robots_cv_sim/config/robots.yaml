@@ -1,0 +1,27 @@
+# Robot spawn positions in PIXELS - matching nav_graph spawn vertices
+# spawn_1: (9.33, 2.67) meters = (280, 80) pixels
+# spawn_2: (10.67, 2.67) meters = (320, 80) pixels  
+# spawn_3: (12.00, 2.67) meters = (360, 80) pixels
+# spawn_4: (13.33, 2.67) meters = (400, 80) pixels
+# spawn_5: (14.67, 2.67) meters = (440, 80) pixels
+robots:
+  - id: 1
+    x: 280
+    y: 80
+    theta: 0.0
+  - id: 2
+    x: 320
+    y: 80
+    theta: 0.0
+  - id: 3
+    x: 360
+    y: 80
+    theta: 0.0
+  - id: 4
+    x: 400
+    y: 80
+    theta: 0.0
+  - id: 5
+    x: 440
+    y: 80
+    theta: 0.0

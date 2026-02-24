@@ -1,0 +1,36 @@
+services:
+  rmf-jazzy-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USERNAME: dev
+    volumes:
+      # Mount the workspace
+      - /home/sriram/rmf_ws/:/home/dev/rmf_ws
+      # GUI forwarding
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    # Network host mode is recommended for ROS 2 to enable multicast discovery easily
+    network_mode: host
+    # Privileged mode is often useful for hardware access, but not strictly required for just GUI. 
+    # It can help with some device access if needed.
+    privileged: true
+    security_opt:
+      - seccomp:unconfined
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    command: /bin/sh -c "while sleep 1000; do :; done"
+
+
+
+
+
+
