@@ -1,1 +1,0 @@
-/home/dev/rmf_ws/src/robot_controller/launch/controllers.launch.py

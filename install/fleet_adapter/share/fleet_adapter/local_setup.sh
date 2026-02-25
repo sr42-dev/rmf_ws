@@ -1,1 +1,0 @@
-/home/dev/rmf_ws/build/fleet_adapter/ament_cmake_environment_hooks/local_setup.sh

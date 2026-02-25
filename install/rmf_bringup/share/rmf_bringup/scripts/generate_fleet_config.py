@@ -1,1 +1,0 @@
-/home/dev/rmf_ws/build/rmf_bringup/scripts/generate_fleet_config.py

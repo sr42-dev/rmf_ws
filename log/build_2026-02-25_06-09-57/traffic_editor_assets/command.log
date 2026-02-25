@@ -1,4 +1,0 @@
-Invoking command in '/home/dev/rmf_ws/build/traffic_editor_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/traffic_editor_assets -- -j16 -l16
-Invoked command in '/home/dev/rmf_ws/build/traffic_editor_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/traffic_editor_assets -- -j16 -l16
-Invoking command in '/home/dev/rmf_ws/build/traffic_editor_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/traffic_editor_assets
-Invoked command in '/home/dev/rmf_ws/build/traffic_editor_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/traffic_editor_assets

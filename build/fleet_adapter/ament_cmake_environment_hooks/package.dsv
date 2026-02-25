@@ -1,4 +1,0 @@
-source;share/fleet_adapter/local_setup.bash
-source;share/fleet_adapter/local_setup.dsv
-source;share/fleet_adapter/local_setup.sh
-source;share/fleet_adapter/local_setup.zsh

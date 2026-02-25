@@ -1,8 +1,0 @@
-Metadata-Version: 2.1
-Name: rmf-bringup
-Version: 0.0.0
-Summary: Launch files for bringing up RMF simulation and tests
-Maintainer: dev
-Maintainer-email: dev@todo.todo
-License: TODO: License declaration
-Provides-Extra: test

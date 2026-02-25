@@ -1,1 +1,0 @@
-/home/dev/rmf_ws/src/robots_cv_sim/launch/sim.launch.py

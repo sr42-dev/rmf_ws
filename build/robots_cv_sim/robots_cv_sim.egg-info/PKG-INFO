@@ -1,8 +1,0 @@
-Metadata-Version: 2.1
-Name: robots-cv-sim
-Version: 0.0.0
-Summary: Robot Simulator with OpenCV
-Maintainer: dev
-Maintainer-email: dev@todo.todo
-License: Apache-2.0
-Provides-Extra: test
