@@ -1,0 +1,2 @@
+[console_scripts]
+sim_node = robots_cv_sim.sim_node:main

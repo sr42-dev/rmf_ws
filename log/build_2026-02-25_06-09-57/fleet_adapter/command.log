@@ -1,0 +1,6 @@
+Invoking command in '/home/dev/rmf_ws/build/fleet_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/dev/rmf_ws/src/fleet_adapter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/rmf_ws/install/fleet_adapter
+Invoked command in '/home/dev/rmf_ws/build/fleet_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/dev/rmf_ws/src/fleet_adapter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/rmf_ws/install/fleet_adapter
+Invoking command in '/home/dev/rmf_ws/build/fleet_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/fleet_adapter -- -j16 -l16
+Invoked command in '/home/dev/rmf_ws/build/fleet_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/fleet_adapter -- -j16 -l16
+Invoking command in '/home/dev/rmf_ws/build/fleet_adapter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/fleet_adapter
+Invoked command in '/home/dev/rmf_ws/build/fleet_adapter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/fleet_adapter

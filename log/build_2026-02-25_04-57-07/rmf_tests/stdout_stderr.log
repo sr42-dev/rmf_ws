@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating rmf_tests.egg-info
+writing rmf_tests.egg-info/PKG-INFO
+writing dependency_links to rmf_tests.egg-info/dependency_links.txt
+writing entry points to rmf_tests.egg-info/entry_points.txt
+writing requirements to rmf_tests.egg-info/requires.txt
+writing top-level names to rmf_tests.egg-info/top_level.txt
+writing manifest file 'rmf_tests.egg-info/SOURCES.txt'
+reading manifest file 'rmf_tests.egg-info/SOURCES.txt'
+writing manifest file 'rmf_tests.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dev/rmf_ws/install/rmf_tests/lib/python3.12/site-packages/rmf-tests.egg-link (link to .)
+Installing test_navigation script to /home/dev/rmf_ws/install/rmf_tests/lib/rmf_tests
+
+Installed /home/dev/rmf_ws/build/rmf_tests
+running symlink_data
+creating /home/dev/rmf_ws/install/rmf_tests/share/ament_index
+creating /home/dev/rmf_ws/install/rmf_tests/share/ament_index/resource_index
+creating /home/dev/rmf_ws/install/rmf_tests/share/ament_index/resource_index/packages
+symbolically linking /home/dev/rmf_ws/build/rmf_tests/resource/rmf_tests -> /home/dev/rmf_ws/install/rmf_tests/share/ament_index/resource_index/packages
+symbolically linking /home/dev/rmf_ws/build/rmf_tests/package.xml -> /home/dev/rmf_ws/install/rmf_tests/share/rmf_tests

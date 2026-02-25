@@ -1,0 +1,317 @@
+[0.000000] (-) TimerEvent: {}
+[0.000844] (fleet_adapter) JobQueued: {'identifier': 'fleet_adapter', 'dependencies': OrderedDict()}
+[0.000916] (robot_controller) JobQueued: {'identifier': 'robot_controller', 'dependencies': OrderedDict()}
+[0.001007] (robots_cv_sim) JobQueued: {'identifier': 'robots_cv_sim', 'dependencies': OrderedDict()}
+[0.001082] (traffic_editor_assets) JobQueued: {'identifier': 'traffic_editor_assets', 'dependencies': OrderedDict()}
+[0.001126] (rmf_tests) JobQueued: {'identifier': 'rmf_tests', 'dependencies': OrderedDict({'traffic_editor_assets': '/home/dev/rmf_ws/install/traffic_editor_assets'})}
+[0.001157] (rmf_bringup) JobQueued: {'identifier': 'rmf_bringup', 'dependencies': OrderedDict({'fleet_adapter': '/home/dev/rmf_ws/install/fleet_adapter', 'robot_controller': '/home/dev/rmf_ws/install/robot_controller', 'robots_cv_sim': '/home/dev/rmf_ws/install/robots_cv_sim', 'traffic_editor_assets': '/home/dev/rmf_ws/install/traffic_editor_assets', 'rmf_tests': '/home/dev/rmf_ws/install/rmf_tests'})}
+[0.001189] (traffic_editor_assets) JobStarted: {'identifier': 'traffic_editor_assets'}
+[0.011987] (fleet_adapter) JobStarted: {'identifier': 'fleet_adapter'}
+[0.014088] (robot_controller) JobStarted: {'identifier': 'robot_controller'}
+[0.016118] (robots_cv_sim) JobStarted: {'identifier': 'robots_cv_sim'}
+[0.019909] (traffic_editor_assets) JobProgress: {'identifier': 'traffic_editor_assets', 'progress': 'cmake'}
+[0.020271] (traffic_editor_assets) JobProgress: {'identifier': 'traffic_editor_assets', 'progress': 'build'}
+[0.020747] (traffic_editor_assets) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/rmf_ws/build/traffic_editor_assets', '--', '-j16', '-l16'], 'cwd': '/home/dev/rmf_ws/build/traffic_editor_assets', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/traffic_editor_assets', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.022103] (fleet_adapter) JobProgress: {'identifier': 'fleet_adapter', 'progress': 'cmake'}
+[0.022150] (fleet_adapter) Command: {'cmd': ['/usr/bin/cmake', '/home/dev/rmf_ws/src/fleet_adapter', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/dev/rmf_ws/install/fleet_adapter'], 'cwd': '/home/dev/rmf_ws/build/fleet_adapter', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/fleet_adapter', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.023575] (robot_controller) JobProgress: {'identifier': 'robot_controller', 'progress': 'cmake'}
+[0.023714] (robot_controller) JobProgress: {'identifier': 'robot_controller', 'progress': 'build'}
+[0.023756] (robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/rmf_ws/build/robot_controller', '--', '-j16', '-l16'], 'cwd': '/home/dev/rmf_ws/build/robot_controller', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/robot_controller', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099697] (-) TimerEvent: {}
+[0.173350] (fleet_adapter) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.173757] (fleet_adapter) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.173974] (fleet_adapter) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.174139] (robot_controller) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/controller.dir/src/controller_node.cpp.o\n'}
+[0.174342] (traffic_editor_assets) CommandEnded: {'returncode': 0}
+[0.174724] (traffic_editor_assets) JobProgress: {'identifier': 'traffic_editor_assets', 'progress': 'install'}
+[0.182851] (traffic_editor_assets) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev/rmf_ws/build/traffic_editor_assets'], 'cwd': '/home/dev/rmf_ws/build/traffic_editor_assets', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/traffic_editor_assets', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.194141] (traffic_editor_assets) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.194863] (traffic_editor_assets) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.195094] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/map.building.yaml\n'}
+[0.195291] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/map.png\n'}
+[0.195481] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/maps.json\n'}
+[0.195602] (traffic_editor_assets) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/packages/traffic_editor_assets\n'}
+[0.199773] (-) TimerEvent: {}
+[0.203299] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/traffic_editor_assets/assets\n'}
+[0.203745] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/package_run_dependencies/traffic_editor_assets\n'}
+[0.204217] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/parent_prefix_path/traffic_editor_assets\n'}
+[0.204617] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/ament_prefix_path.sh\n'}
+[0.204992] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/ament_prefix_path.dsv\n'}
+[0.205407] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/path.sh\n'}
+[0.205785] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/path.dsv\n'}
+[0.206158] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.bash\n'}
+[0.206603] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.sh\n'}
+[0.206980] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.zsh\n'}
+[0.207297] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.dsv\n'}
+[0.207583] (traffic_editor_assets) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/package.dsv\n'}
+[0.218221] (traffic_editor_assets) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/packages/traffic_editor_assets\n'}
+[0.226335] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/cmake/traffic_editor_assetsConfig.cmake\n'}
+[0.226667] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/cmake/traffic_editor_assetsConfig-version.cmake\n'}
+[0.226955] (traffic_editor_assets) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/package.xml\n'}
+[0.228522] (traffic_editor_assets) CommandEnded: {'returncode': 0}
+[0.239895] (traffic_editor_assets) JobEnded: {'identifier': 'traffic_editor_assets', 'rc': 0}
+[0.240756] (rmf_tests) JobStarted: {'identifier': 'rmf_tests'}
+[0.299890] (-) TimerEvent: {}
+[0.400082] (-) TimerEvent: {}
+[0.403752] (fleet_adapter) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.403973] (fleet_adapter) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.404098] (fleet_adapter) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.404212] (fleet_adapter) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.404323] (fleet_adapter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.404431] (fleet_adapter) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.404534] (fleet_adapter) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.404638] (fleet_adapter) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.404745] (fleet_adapter) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.404877] (fleet_adapter) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.500183] (-) TimerEvent: {}
+[0.521065] (fleet_adapter) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.581713] (fleet_adapter) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.598303] (robots_cv_sim) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/dev/rmf_ws/build/robots_cv_sim/build', '--no-deps', 'symlink_data'], 'cwd': '/home/dev/rmf_ws/build/robots_cv_sim', 'env': {'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/robots_cv_sim', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/dev/rmf_ws/build/robots_cv_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/rmf_ws/install/robots_cv_sim/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.600252] (-) TimerEvent: {}
+[0.617294] (fleet_adapter) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.653792] (fleet_adapter) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.668758] (fleet_adapter) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.683807] (fleet_adapter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.700345] (fleet_adapter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700544] (-) TimerEvent: {}
+[0.771261] (fleet_adapter) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.774014] (fleet_adapter) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800641] (-) TimerEvent: {}
+[0.825904] (robots_cv_sim) StdoutLine: {'line': b'running develop\n'}
+[0.829363] (rmf_tests) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/dev/rmf_ws/build/rmf_tests/build', '--no-deps', 'symlink_data'], 'cwd': '/home/dev/rmf_ws/build/rmf_tests', 'env': {'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/dev/rmf_ws/install/traffic_editor_assets:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/rmf_tests', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/dev/rmf_ws/build/rmf_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/rmf_ws/install/rmf_tests/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/dev/rmf_ws/install/traffic_editor_assets:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.857699] (fleet_adapter) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.880327] (fleet_adapter) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.900743] (-) TimerEvent: {}
+[0.909780] (fleet_adapter) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.973545] (robots_cv_sim) StdoutLine: {'line': b'running egg_info\n'}
+[0.979383] (fleet_adapter) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.984108] (robots_cv_sim) StdoutLine: {'line': b'writing robots_cv_sim.egg-info/PKG-INFO\n'}
+[0.984552] (robots_cv_sim) StdoutLine: {'line': b'writing dependency_links to robots_cv_sim.egg-info/dependency_links.txt\n'}
+[0.984798] (robots_cv_sim) StdoutLine: {'line': b'writing entry points to robots_cv_sim.egg-info/entry_points.txt\n'}
+[0.984919] (robots_cv_sim) StdoutLine: {'line': b'writing requirements to robots_cv_sim.egg-info/requires.txt\n'}
+[0.985038] (robots_cv_sim) StdoutLine: {'line': b'writing top-level names to robots_cv_sim.egg-info/top_level.txt\n'}
+[0.991873] (fleet_adapter) StdoutLine: {'line': b'-- Found rmf_fleet_msgs: 3.3.1 (/opt/ros/jazzy/share/rmf_fleet_msgs/cmake)\n'}
+[1.000861] (-) TimerEvent: {}
+[1.007759] (fleet_adapter) StdoutLine: {'line': b'-- Found rmf_task_msgs: 3.3.1 (/opt/ros/jazzy/share/rmf_task_msgs/cmake)\n'}
+[1.013716] (robots_cv_sim) StdoutLine: {'line': b"reading manifest file 'robots_cv_sim.egg-info/SOURCES.txt'\n"}
+[1.014492] (robots_cv_sim) StdoutLine: {'line': b"writing manifest file 'robots_cv_sim.egg-info/SOURCES.txt'\n"}
+[1.026732] (robots_cv_sim) StdoutLine: {'line': b'running build_ext\n'}
+[1.026956] (robots_cv_sim) StdoutLine: {'line': b'Creating /home/dev/rmf_ws/install/robots_cv_sim/lib/python3.12/site-packages/robots-cv-sim.egg-link (link to .)\n'}
+[1.027316] (robots_cv_sim) StdoutLine: {'line': b'Installing sim_node script to /home/dev/rmf_ws/install/robots_cv_sim/lib/robots_cv_sim\n'}
+[1.027591] (robots_cv_sim) StdoutLine: {'line': b'\n'}
+[1.027793] (robots_cv_sim) StdoutLine: {'line': b'Installed /home/dev/rmf_ws/build/robots_cv_sim\n'}
+[1.027913] (robots_cv_sim) StdoutLine: {'line': b'running symlink_data\n'}
+[1.047910] (rmf_tests) StdoutLine: {'line': b'running develop\n'}
+[1.059737] (robots_cv_sim) CommandEnded: {'returncode': 0}
+[1.069452] (robots_cv_sim) JobEnded: {'identifier': 'robots_cv_sim', 'rc': 0}
+[1.100962] (-) TimerEvent: {}
+[1.152335] (fleet_adapter) StdoutLine: {'line': b'-- Configuring done (1.1s)\n'}
+[1.164335] (fleet_adapter) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.167156] (fleet_adapter) StdoutLine: {'line': b'-- Build files have been written to: /home/dev/rmf_ws/build/fleet_adapter\n'}
+[1.175354] (fleet_adapter) CommandEnded: {'returncode': 0}
+[1.176116] (fleet_adapter) JobProgress: {'identifier': 'fleet_adapter', 'progress': 'build'}
+[1.176574] (fleet_adapter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/rmf_ws/build/fleet_adapter', '--', '-j16', '-l16'], 'cwd': '/home/dev/rmf_ws/build/fleet_adapter', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/fleet_adapter', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.180778] (rmf_tests) StdoutLine: {'line': b'running egg_info\n'}
+[1.192024] (rmf_tests) StdoutLine: {'line': b'writing rmf_tests.egg-info/PKG-INFO\n'}
+[1.192487] (rmf_tests) StdoutLine: {'line': b'writing dependency_links to rmf_tests.egg-info/dependency_links.txt\n'}
+[1.192701] (rmf_tests) StdoutLine: {'line': b'writing entry points to rmf_tests.egg-info/entry_points.txt\n'}
+[1.192817] (rmf_tests) StdoutLine: {'line': b'writing requirements to rmf_tests.egg-info/requires.txt\n'}
+[1.192927] (rmf_tests) StdoutLine: {'line': b'writing top-level names to rmf_tests.egg-info/top_level.txt\n'}
+[1.201046] (-) TimerEvent: {}
+[1.216093] (rmf_tests) StdoutLine: {'line': b"reading manifest file 'rmf_tests.egg-info/SOURCES.txt'\n"}
+[1.216630] (rmf_tests) StdoutLine: {'line': b"writing manifest file 'rmf_tests.egg-info/SOURCES.txt'\n"}
+[1.229216] (rmf_tests) StdoutLine: {'line': b'running build_ext\n'}
+[1.229469] (rmf_tests) StdoutLine: {'line': b'Creating /home/dev/rmf_ws/install/rmf_tests/lib/python3.12/site-packages/rmf-tests.egg-link (link to .)\n'}
+[1.229801] (rmf_tests) StdoutLine: {'line': b'Installing test_navigation script to /home/dev/rmf_ws/install/rmf_tests/lib/rmf_tests\n'}
+[1.229977] (rmf_tests) StdoutLine: {'line': b'Installing test_patrol_task script to /home/dev/rmf_ws/install/rmf_tests/lib/rmf_tests\n'}
+[1.230136] (rmf_tests) StdoutLine: {'line': b'\n'}
+[1.230288] (rmf_tests) StdoutLine: {'line': b'Installed /home/dev/rmf_ws/build/rmf_tests\n'}
+[1.230454] (rmf_tests) StdoutLine: {'line': b'running symlink_data\n'}
+[1.230641] (rmf_tests) StdoutLine: {'line': b'creating /home/dev/rmf_ws/install/rmf_tests/share/rmf_tests/config\n'}
+[1.230774] (rmf_tests) StdoutLine: {'line': b'symbolically linking /home/dev/rmf_ws/build/rmf_tests/config/test_navigation.yaml -> /home/dev/rmf_ws/install/rmf_tests/share/rmf_tests/config\n'}
+[1.230977] (rmf_tests) StdoutLine: {'line': b'symbolically linking /home/dev/rmf_ws/build/rmf_tests/config/test_patrol.yaml -> /home/dev/rmf_ws/install/rmf_tests/share/rmf_tests/config\n'}
+[1.234018] (fleet_adapter) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/fleet_adapter_node.dir/src/fleet_adapter_node.cpp.o\n'}
+[1.261273] (rmf_tests) CommandEnded: {'returncode': 0}
+[1.268794] (rmf_tests) JobEnded: {'identifier': 'rmf_tests', 'rc': 0}
+[1.301179] (-) TimerEvent: {}
+[1.401413] (-) TimerEvent: {}
+[1.501647] (-) TimerEvent: {}
+[1.601876] (-) TimerEvent: {}
+[1.702113] (-) TimerEvent: {}
+[1.802328] (-) TimerEvent: {}
+[1.902566] (-) TimerEvent: {}
+[2.002779] (-) TimerEvent: {}
+[2.102991] (-) TimerEvent: {}
+[2.203206] (-) TimerEvent: {}
+[2.303431] (-) TimerEvent: {}
+[2.403661] (-) TimerEvent: {}
+[2.503853] (-) TimerEvent: {}
+[2.604065] (-) TimerEvent: {}
+[2.704287] (-) TimerEvent: {}
+[2.804472] (-) TimerEvent: {}
+[2.904689] (-) TimerEvent: {}
+[3.004913] (-) TimerEvent: {}
+[3.105128] (-) TimerEvent: {}
+[3.205352] (-) TimerEvent: {}
+[3.305566] (-) TimerEvent: {}
+[3.405774] (-) TimerEvent: {}
+[3.505985] (-) TimerEvent: {}
+[3.606196] (-) TimerEvent: {}
+[3.706406] (-) TimerEvent: {}
+[3.806636] (-) TimerEvent: {}
+[3.906916] (-) TimerEvent: {}
+[4.007131] (-) TimerEvent: {}
+[4.107339] (-) TimerEvent: {}
+[4.207548] (-) TimerEvent: {}
+[4.307768] (-) TimerEvent: {}
+[4.407982] (-) TimerEvent: {}
+[4.508199] (-) TimerEvent: {}
+[4.608417] (-) TimerEvent: {}
+[4.708629] (-) TimerEvent: {}
+[4.808840] (-) TimerEvent: {}
+[4.909065] (-) TimerEvent: {}
+[5.009302] (-) TimerEvent: {}
+[5.109518] (-) TimerEvent: {}
+[5.210228] (-) TimerEvent: {}
+[5.310847] (-) TimerEvent: {}
+[5.411062] (-) TimerEvent: {}
+[5.511270] (-) TimerEvent: {}
+[5.611487] (-) TimerEvent: {}
+[5.711701] (-) TimerEvent: {}
+[5.811919] (-) TimerEvent: {}
+[5.912137] (-) TimerEvent: {}
+[6.012356] (-) TimerEvent: {}
+[6.112576] (-) TimerEvent: {}
+[6.212785] (-) TimerEvent: {}
+[6.313010] (-) TimerEvent: {}
+[6.413230] (-) TimerEvent: {}
+[6.513892] (-) TimerEvent: {}
+[6.614109] (-) TimerEvent: {}
+[6.714312] (-) TimerEvent: {}
+[6.814959] (-) TimerEvent: {}
+[6.915175] (-) TimerEvent: {}
+[7.015378] (-) TimerEvent: {}
+[7.115581] (-) TimerEvent: {}
+[7.215763] (-) TimerEvent: {}
+[7.315966] (-) TimerEvent: {}
+[7.416167] (-) TimerEvent: {}
+[7.516976] (-) TimerEvent: {}
+[7.617189] (-) TimerEvent: {}
+[7.717395] (-) TimerEvent: {}
+[7.817995] (-) TimerEvent: {}
+[7.918261] (-) TimerEvent: {}
+[8.018501] (-) TimerEvent: {}
+[8.118712] (-) TimerEvent: {}
+[8.218923] (-) TimerEvent: {}
+[8.319131] (-) TimerEvent: {}
+[8.419335] (-) TimerEvent: {}
+[8.519539] (-) TimerEvent: {}
+[8.619719] (-) TimerEvent: {}
+[8.719920] (-) TimerEvent: {}
+[8.820123] (-) TimerEvent: {}
+[8.920336] (-) TimerEvent: {}
+[9.020550] (-) TimerEvent: {}
+[9.120757] (-) TimerEvent: {}
+[9.220968] (-) TimerEvent: {}
+[9.321187] (-) TimerEvent: {}
+[9.421399] (-) TimerEvent: {}
+[9.521631] (-) TimerEvent: {}
+[9.621847] (-) TimerEvent: {}
+[9.722057] (-) TimerEvent: {}
+[9.822265] (-) TimerEvent: {}
+[9.922481] (-) TimerEvent: {}
+[10.022693] (-) TimerEvent: {}
+[10.122908] (-) TimerEvent: {}
+[10.223114] (-) TimerEvent: {}
+[10.323325] (-) TimerEvent: {}
+[10.423547] (-) TimerEvent: {}
+[10.523759] (-) TimerEvent: {}
+[10.623972] (-) TimerEvent: {}
+[10.724170] (-) TimerEvent: {}
+[10.824400] (-) TimerEvent: {}
+[10.920921] (robot_controller) StdoutLine: {'line': b'[100%] Linking CXX executable controller\n'}
+[10.924506] (-) TimerEvent: {}
+[10.964502] (fleet_adapter) StdoutLine: {'line': b'[100%] Linking CXX executable fleet_adapter_node\n'}
+[11.025054] (-) TimerEvent: {}
+[11.125278] (-) TimerEvent: {}
+[11.225501] (-) TimerEvent: {}
+[11.325712] (-) TimerEvent: {}
+[11.378987] (fleet_adapter) StdoutLine: {'line': b'[100%] Built target fleet_adapter_node\n'}
+[11.391933] (fleet_adapter) CommandEnded: {'returncode': 0}
+[11.392565] (fleet_adapter) JobProgress: {'identifier': 'fleet_adapter', 'progress': 'install'}
+[11.392937] (fleet_adapter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev/rmf_ws/build/fleet_adapter'], 'cwd': '/home/dev/rmf_ws/build/fleet_adapter', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/fleet_adapter', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[11.399747] (fleet_adapter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.400157] (fleet_adapter) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[11.400517] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/lib/fleet_adapter/fleet_adapter_node\n'}
+[11.400819] (robot_controller) StdoutLine: {'line': b'[100%] Built target controller\n'}
+[11.411683] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/ament_index/resource_index/package_run_dependencies/fleet_adapter\n'}
+[11.413112] (robot_controller) CommandEnded: {'returncode': 0}
+[11.413567] (robot_controller) JobProgress: {'identifier': 'robot_controller', 'progress': 'install'}
+[11.413874] (robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev/rmf_ws/build/robot_controller'], 'cwd': '/home/dev/rmf_ws/build/robot_controller', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/robot_controller', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[11.420264] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/ament_index/resource_index/parent_prefix_path/fleet_adapter\n'}
+[11.420547] (robot_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.421106] (robot_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[11.421583] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/lib/robot_controller/controller\n'}
+[11.422129] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/launch/controllers.launch.py\n'}
+[11.422474] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller\n'}
+[11.422799] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller\n'}
+[11.423115] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh\n'}
+[11.423380] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv\n'}
+[11.423668] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/path.sh\n'}
+[11.423930] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/path.dsv\n'}
+[11.424188] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.bash\n'}
+[11.424452] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.sh\n'}
+[11.424700] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.zsh\n'}
+[11.424953] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.dsv\n'}
+[11.425129] (robot_controller) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/package.dsv\n'}
+[11.425790] (-) TimerEvent: {}
+[11.428030] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/ament_prefix_path.sh\n'}
+[11.436452] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/packages/robot_controller\n'}
+[11.436742] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake\n'}
+[11.436910] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake\n'}
+[11.437173] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/package.xml\n'}
+[11.440209] (robot_controller) CommandEnded: {'returncode': 0}
+[11.451941] (robot_controller) JobEnded: {'identifier': 'robot_controller', 'rc': 0}
+[11.452516] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/ament_prefix_path.dsv\n'}
+[11.453635] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/path.sh\n'}
+[11.464029] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/path.dsv\n'}
+[11.476948] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.bash\n'}
+[11.487336] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.sh\n'}
+[11.500237] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.zsh\n'}
+[11.508938] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.dsv\n'}
+[11.521311] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/package.dsv\n'}
+[11.525887] (-) TimerEvent: {}
+[11.531717] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/ament_index/resource_index/packages/fleet_adapter\n'}
+[11.543248] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/cmake/fleet_adapterConfig.cmake\n'}
+[11.550220] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/cmake/fleet_adapterConfig-version.cmake\n'}
+[11.557658] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/package.xml\n'}
+[11.571674] (fleet_adapter) CommandEnded: {'returncode': 0}
+[11.583449] (fleet_adapter) JobEnded: {'identifier': 'fleet_adapter', 'rc': 0}
+[11.584589] (rmf_bringup) JobStarted: {'identifier': 'rmf_bringup'}
+[11.626006] (-) TimerEvent: {}
+[11.726194] (-) TimerEvent: {}
+[11.826362] (-) TimerEvent: {}
+[11.926644] (-) TimerEvent: {}
+[12.026815] (-) TimerEvent: {}
+[12.126984] (-) TimerEvent: {}
+[12.163979] (rmf_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/dev/rmf_ws/build/rmf_bringup/build', '--no-deps', 'symlink_data'], 'cwd': '/home/dev/rmf_ws/build/rmf_bringup', 'env': {'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/dev/rmf_ws/install/rmf_tests:/home/dev/rmf_ws/install/traffic_editor_assets:/home/dev/rmf_ws/install/robots_cv_sim:/home/dev/rmf_ws/install/robot_controller:/home/dev/rmf_ws/install/fleet_adapter:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/rmf_bringup', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/dev/rmf_ws/build/rmf_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/rmf_ws/install/rmf_bringup/lib/python3.12/site-packages:/home/dev/rmf_ws/build/rmf_tests:/home/dev/rmf_ws/install/rmf_tests/lib/python3.12/site-packages:/home/dev/rmf_ws/build/robots_cv_sim:/home/dev/rmf_ws/install/robots_cv_sim/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/dev/rmf_ws/install/traffic_editor_assets:/home/dev/rmf_ws/install/robot_controller:/home/dev/rmf_ws/install/fleet_adapter:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[12.227080] (-) TimerEvent: {}
+[12.327232] (-) TimerEvent: {}
+[12.392825] (rmf_bringup) StdoutLine: {'line': b'running develop\n'}
+[12.427351] (-) TimerEvent: {}
+[12.515214] (rmf_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[12.526639] (rmf_bringup) StdoutLine: {'line': b'writing rmf_bringup.egg-info/PKG-INFO\n'}
+[12.526944] (rmf_bringup) StdoutLine: {'line': b'writing dependency_links to rmf_bringup.egg-info/dependency_links.txt\n'}
+[12.527167] (rmf_bringup) StdoutLine: {'line': b'writing requirements to rmf_bringup.egg-info/requires.txt\n'}
+[12.527283] (rmf_bringup) StdoutLine: {'line': b'writing top-level names to rmf_bringup.egg-info/top_level.txt\n'}
+[12.527389] (-) TimerEvent: {}
+[12.550985] (rmf_bringup) StdoutLine: {'line': b"reading manifest file 'rmf_bringup.egg-info/SOURCES.txt'\n"}
+[12.551528] (rmf_bringup) StdoutLine: {'line': b"writing manifest file 'rmf_bringup.egg-info/SOURCES.txt'\n"}
+[12.565957] (rmf_bringup) StdoutLine: {'line': b'running build_ext\n'}
+[12.566193] (rmf_bringup) StdoutLine: {'line': b'Creating /home/dev/rmf_ws/install/rmf_bringup/lib/python3.12/site-packages/rmf-bringup.egg-link (link to .)\n'}
+[12.566503] (rmf_bringup) StdoutLine: {'line': b'\n'}
+[12.566710] (rmf_bringup) StdoutLine: {'line': b'Installed /home/dev/rmf_ws/build/rmf_bringup\n'}
+[12.566825] (rmf_bringup) StdoutLine: {'line': b'running symlink_data\n'}
+[12.598891] (rmf_bringup) CommandEnded: {'returncode': 0}
+[12.608876] (rmf_bringup) JobEnded: {'identifier': 'rmf_bringup', 'rc': 0}
+[12.609569] (-) EventReactorShutdown: {}

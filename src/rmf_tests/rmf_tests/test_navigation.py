@@ -219,17 +219,26 @@ class NavigationTestNode(Node):
 
 
 def load_waypoints_from_map():
-    """Load waypoints by reading specific vertex indices from the
-    building YAML in traffic_editor_assets.
+    """Load waypoints by reading checkpoint vertex indices from the test
+    config YAML, then resolving coordinates from the building YAML in
+    traffic_editor_assets.
 
     Returns list of (x_meters, y_meters, vertex_index) tuples.
     """
-    VERTEX_INDICES = [
-        4860, 4873, 5373, 5402, 5697, 5762,
-        7049, 7058, 9468, 9363, 6474, 6476,
-        5148, 5136, 4861,
-    ]
+    # Load checkpoint list from test config
+    tests_dir = get_package_share_directory('rmf_tests')
+    config_path = os.path.join(tests_dir, 'config', 'test_navigation.yaml')
 
+    with open(config_path, 'r') as f:
+        config = yaml.safe_load(f)
+
+    vertex_indices = config.get('checkpoints', [])
+    if not vertex_indices:
+        print("WARNING: No checkpoints in test_navigation.yaml")
+        return [(13.33, 13.33, 0), (26.67, 13.33, 0),
+                (40.0, 22.83, 0), (26.67, 22.83, 0)]
+
+    # Resolve vertex coordinates from building map
     assets_dir = get_package_share_directory('traffic_editor_assets')
     building_yaml = os.path.join(assets_dir, 'map.building.yaml')
 
@@ -239,7 +248,7 @@ def load_waypoints_from_map():
     vertices = data['levels']['L1']['vertices']
 
     waypoints = []
-    for idx in VERTEX_INDICES:
+    for idx in vertex_indices:
         if idx >= len(vertices):
             print(f"WARNING: vertex index {idx} out of range "
                   f"(max {len(vertices)-1}), skipping")

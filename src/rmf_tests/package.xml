@@ -12,6 +12,7 @@
   <depend>sensor_msgs</depend>
   <depend>std_msgs</depend>
   <depend>rmf_fleet_msgs</depend>
+  <depend>rmf_task_msgs</depend>
   <depend>traffic_editor_assets</depend>
 
   <buildtool_depend>ament_index_python</buildtool_depend>

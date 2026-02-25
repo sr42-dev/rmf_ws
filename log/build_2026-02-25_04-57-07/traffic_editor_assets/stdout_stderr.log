@@ -1,0 +1,40 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dev/rmf_ws/build/traffic_editor_assets
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/map.building.yaml
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/map.png
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/maps.json
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/packages/traffic_editor_assets
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/traffic_editor_assets/assets
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/package_run_dependencies/traffic_editor_assets
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/parent_prefix_path/traffic_editor_assets
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/ament_prefix_path.sh
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/ament_prefix_path.dsv
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/path.sh
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/path.dsv
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.bash
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.sh
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.zsh
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.dsv
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/package.dsv
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/packages/traffic_editor_assets
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/cmake/traffic_editor_assetsConfig.cmake
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/cmake/traffic_editor_assetsConfig-version.cmake
+-- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/package.xml

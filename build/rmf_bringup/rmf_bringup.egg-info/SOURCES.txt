@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+launch/bringup.launch.py
+resource/rmf_bringup
+rmf_bringup/__init__.py
+rmf_bringup.egg-info/PKG-INFO
+rmf_bringup.egg-info/SOURCES.txt
+rmf_bringup.egg-info/dependency_links.txt
+rmf_bringup.egg-info/requires.txt
+rmf_bringup.egg-info/top_level.txt
+rmf_bringup.egg-info/zip-safe
+scripts/generate_fleet_config.py
+scripts/generate_nav_graph.py

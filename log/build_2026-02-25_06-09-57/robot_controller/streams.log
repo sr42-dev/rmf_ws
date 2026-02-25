@@ -1,0 +1,26 @@
+[0.010s] Invoking command in '/home/dev/rmf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/robot_controller -- -j16 -l16
+[0.160s] [ 50%] Building CXX object CMakeFiles/controller.dir/src/controller_node.cpp.o
+[10.907s] [100%] Linking CXX executable controller
+[11.387s] [100%] Built target controller
+[11.399s] Invoked command in '/home/dev/rmf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/robot_controller -- -j16 -l16
+[11.400s] Invoking command in '/home/dev/rmf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/robot_controller
+[11.406s] -- Install configuration: ""
+[11.407s] -- Execute custom install script
+[11.407s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/lib/robot_controller/controller
+[11.408s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/launch/controllers.launch.py
+[11.408s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+[11.409s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+[11.409s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+[11.409s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+[11.409s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/path.sh
+[11.410s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/path.dsv
+[11.410s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.bash
+[11.410s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.sh
+[11.410s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.zsh
+[11.411s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.dsv
+[11.411s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/package.dsv
+[11.422s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+[11.422s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+[11.423s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+[11.423s] -- Up-to-date symlink: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/package.xml
+[11.426s] Invoked command in '/home/dev/rmf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/robot_controller

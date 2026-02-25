@@ -1,0 +1,6 @@
+Invoking command in '/home/dev/rmf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/dev/rmf_ws/src/robot_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/rmf_ws/install/robot_controller
+Invoked command in '/home/dev/rmf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/dev/rmf_ws/src/robot_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/rmf_ws/install/robot_controller
+Invoking command in '/home/dev/rmf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/robot_controller -- -j16 -l16
+Invoked command in '/home/dev/rmf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/robot_controller -- -j16 -l16
+Invoking command in '/home/dev/rmf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/robot_controller
+Invoked command in '/home/dev/rmf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/robot_controller

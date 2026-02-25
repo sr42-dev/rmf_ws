@@ -1,0 +1,16 @@
+/home/dev/rmf_ws/install/fleet_adapter/lib/fleet_adapter/fleet_adapter_node
+/home/dev/rmf_ws/install/fleet_adapter/share/ament_index/resource_index/package_run_dependencies/fleet_adapter
+/home/dev/rmf_ws/install/fleet_adapter/share/ament_index/resource_index/parent_prefix_path/fleet_adapter
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/ament_prefix_path.sh
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/ament_prefix_path.dsv
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/path.sh
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/path.dsv
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.bash
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.sh
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.zsh
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.dsv
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/package.dsv
+/home/dev/rmf_ws/install/fleet_adapter/share/ament_index/resource_index/packages/fleet_adapter
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/cmake/fleet_adapterConfig.cmake
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/cmake/fleet_adapterConfig-version.cmake
+/home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/package.xml

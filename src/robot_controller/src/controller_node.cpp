@@ -151,8 +151,11 @@ private:
     if (has_path_) {
       phase_ = PHASE_SPIN;
       RCLCPP_INFO(this->get_logger(),
-        "PathRequest: task='%s', %zu waypoints → SPIN to wp 0",
-        task_id_.c_str(), path_.size());
+        "PathRequest: task='%s', %zu waypoints → SPIN to wp 0 "
+        "(first vertex=%lu, last vertex=%lu)",
+        task_id_.c_str(), path_.size(),
+        static_cast<unsigned long>(path_.front().index),
+        static_cast<unsigned long>(path_.back().index));
     } else {
       phase_ = PHASE_IDLE;
       RCLCPP_WARN(this->get_logger(), "PathRequest with empty path");
@@ -253,7 +256,8 @@ private:
       phase_ = PHASE_IDLE;
       has_path_ = false;
       RCLCPP_INFO(this->get_logger(),
-        "All %zu waypoints reached! → IDLE", path_.size());
+        "All %zu waypoints reached for task '%s'! → IDLE",
+        path_.size(), task_id_.c_str());
       return false;
     }
 
@@ -272,8 +276,9 @@ private:
     // No wait, go straight to SPIN for next waypoint
     phase_ = PHASE_SPIN;
     RCLCPP_INFO(this->get_logger(),
-      "Advancing to wp %zu/%zu (%.2f, %.2f) → SPIN",
-      path_index_, path_.size() - 1, goal_x(), goal_y());
+      "Advancing to wp %zu/%zu (%.2f, %.2f) vertex=%lu → SPIN",
+      path_index_, path_.size() - 1, goal_x(), goal_y(),
+      static_cast<unsigned long>(path_[path_index_].index));
     return true;
   }
 
@@ -315,7 +320,9 @@ private:
       cmd_vel_pub_->publish(cmd);  // stop
       publish_goal_reached();
       RCLCPP_INFO(this->get_logger(),
-        "Waypoint %zu reached! dist=%.3fm", path_index_, dist);
+        "Waypoint %zu reached! dist=%.3fm (vertex=%lu)",
+        path_index_, dist,
+        static_cast<unsigned long>(path_[path_index_].index));
       advance_to_next_waypoint();
       return;
     }
@@ -336,6 +343,12 @@ private:
         if (angular < -SPIN_VEL) angular = -SPIN_VEL;
         cmd.angular.z = angular;
         cmd_vel_pub_->publish(cmd);
+
+        RCLCPP_DEBUG(this->get_logger(),
+          "cmd_vel SPIN: ang=%.3f vertex=%lu wp=%zu/%zu",
+          angular,
+          static_cast<unsigned long>(path_[path_index_].index),
+          path_index_, path_.size() - 1);
 
         if (loop_count_ % 20 == 0) {
           RCLCPP_INFO(this->get_logger(),
@@ -370,6 +383,12 @@ private:
       cmd.linear.x = linear * METER_TO_PIXEL;  // px/s for sim
       cmd.angular.z = angular;
       cmd_vel_pub_->publish(cmd);
+
+      RCLCPP_DEBUG(this->get_logger(),
+        "cmd_vel DRIVE: lin=%.3f ang=%.3f vertex=%lu wp=%zu/%zu",
+        linear, angular,
+        static_cast<unsigned long>(path_[path_index_].index),
+        path_index_, path_.size() - 1);
 
       if (loop_count_ % 20 == 0) {
         RCLCPP_INFO(this->get_logger(),

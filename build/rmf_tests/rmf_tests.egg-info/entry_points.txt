@@ -1,0 +1,3 @@
+[console_scripts]
+test_navigation = rmf_tests.test_navigation:main
+test_patrol_task = rmf_tests.test_patrol_task:main

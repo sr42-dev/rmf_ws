@@ -1,0 +1,19 @@
+running develop
+running egg_info
+writing rmf_tests.egg-info/PKG-INFO
+writing dependency_links to rmf_tests.egg-info/dependency_links.txt
+writing entry points to rmf_tests.egg-info/entry_points.txt
+writing requirements to rmf_tests.egg-info/requires.txt
+writing top-level names to rmf_tests.egg-info/top_level.txt
+reading manifest file 'rmf_tests.egg-info/SOURCES.txt'
+writing manifest file 'rmf_tests.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dev/rmf_ws/install/rmf_tests/lib/python3.12/site-packages/rmf-tests.egg-link (link to .)
+Installing test_navigation script to /home/dev/rmf_ws/install/rmf_tests/lib/rmf_tests
+Installing test_patrol_task script to /home/dev/rmf_ws/install/rmf_tests/lib/rmf_tests
+
+Installed /home/dev/rmf_ws/build/rmf_tests
+running symlink_data
+creating /home/dev/rmf_ws/install/rmf_tests/share/rmf_tests/config
+symbolically linking /home/dev/rmf_ws/build/rmf_tests/config/test_navigation.yaml -> /home/dev/rmf_ws/install/rmf_tests/share/rmf_tests/config
+symbolically linking /home/dev/rmf_ws/build/rmf_tests/config/test_patrol.yaml -> /home/dev/rmf_ws/install/rmf_tests/share/rmf_tests/config

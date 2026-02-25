@@ -2,20 +2,22 @@
 Main bringup launch file for RMF simulation and tests.
 
 This launch file:
-0. Generates fleet config + nav graph from building map
+0. Reads test config to determine num_robots; generates fleet config + nav graph
 1. Launches the robot simulator with specified number of robots
 2. Launches robot controllers for each robot (1s delay)
-3. Runs the specified test from rmf_tests (configurable delay, default 5s)
+3. Launches the fleet adapter (2s delay)
+4. Runs the specified test from rmf_tests (configurable delay, default 5s)
 
 Arguments:
-- num_robots: Number of robots to spawn (default: 1)
 - test_name: Name of the test to run from rmf_tests (default: test_navigation)
+- test_config: Path to test config YAML that specifies num_robots etc.
 - test_delay: Seconds before starting the test (default: 5.0)
 """
 
 import os
 import subprocess
 import sys
+import yaml as pyyaml
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import (
@@ -31,11 +33,22 @@ from launch_ros.actions import Node
 NAV_GRAPH_PATH = '/tmp/rmf_nav_graph.yaml'
 FLEET_CONFIG_PATH = '/tmp/rmf_fleet_config.yaml'
 
+# Will be set by generate_config_files after reading test config
+_num_robots = 1
+
 
 def generate_config_files(context):
-    """Generate nav graph and fleet config before launching nodes."""
-    num_robots = int(LaunchConfiguration('num_robots').perform(context))
+    """Read test config for num_robots, then generate nav graph and fleet
+    config."""
+    global _num_robots
+
+    test_config_path = LaunchConfiguration('test_config').perform(context)
     map_yaml = LaunchConfiguration('map_yaml').perform(context)
+
+    # Read num_robots from the test config YAML
+    with open(test_config_path, 'r') as f:
+        test_config = pyyaml.safe_load(f)
+    _num_robots = int(test_config.get('num_robots', 1))
 
     bringup_share = get_package_share_directory('rmf_bringup')
     nav_graph_script = os.path.join(bringup_share, 'scripts',
@@ -53,19 +66,33 @@ def generate_config_files(context):
     # Generate fleet config with N robots
     subprocess.check_call([
         sys.executable, fleet_config_script,
-        '--num-robots', str(num_robots),
+        '--num-robots', str(_num_robots),
         '--output', FLEET_CONFIG_PATH,
     ])
 
     return []
 
 
+def generate_sim_node(context):
+    """Generate the simulator node using num_robots from test config."""
+    return [Node(
+        package='robots_cv_sim',
+        executable='sim_node',
+        name='robot_simulator',
+        output='screen',
+        parameters=[{
+            'map_yaml': LaunchConfiguration('map_yaml'),
+            'map_img_path': LaunchConfiguration('map_img_path'),
+            'start_config': LaunchConfiguration('start_config'),
+            'num_robots_override': _num_robots,
+        }]
+    )]
+
+
 def generate_controller_nodes(context):
     """Generate controller nodes for each robot."""
-    num_robots = int(LaunchConfiguration('num_robots').perform(context))
-
     nodes = []
-    for i in range(1, num_robots + 1):
+    for i in range(1, _num_robots + 1):
         node = Node(
             package='robot_controller',
             executable='controller',
@@ -78,17 +105,27 @@ def generate_controller_nodes(context):
     return nodes
 
 
+def generate_fleet_adapter_node(context):
+    """Generate the fleet adapter node."""
+    return [Node(
+        package='fleet_adapter',
+        executable='fleet_adapter_node',
+        name='fleet_adapter',
+        output='screen',
+        parameters=[{
+            'nav_graph_path': NAV_GRAPH_PATH,
+            'fleet_name': 'fleet_1',
+        }]
+    )]
+
 
 def generate_test_process(context):
     """Generate the test execution process."""
     test_name = LaunchConfiguration('test_name').perform(context)
-    num_robots = LaunchConfiguration('num_robots').perform(context)
 
     test_process = ExecuteProcess(
         cmd=[
             'ros2', 'run', 'rmf_tests', test_name,
-            '--ros-args',
-            '-p', f'num_robots:={num_robots}'
         ],
         output='screen',
         shell=False
@@ -102,6 +139,7 @@ def generate_launch_description():
     robots_cv_sim_share = get_package_share_directory('robots_cv_sim')
     traffic_editor_assets_share = get_package_share_directory(
         'traffic_editor_assets')
+    rmf_tests_share = get_package_share_directory('rmf_tests')
 
     default_map_yaml = os.path.join(
         traffic_editor_assets_share, 'map.building.yaml')
@@ -109,18 +147,20 @@ def generate_launch_description():
         traffic_editor_assets_share, 'map.png')
     default_start_config = os.path.join(
         robots_cv_sim_share, 'config', 'start_config.yaml')
+    default_test_config = os.path.join(
+        rmf_tests_share, 'config', 'test_navigation.yaml')
 
     return LaunchDescription([
         # ── Declare arguments ──────────────────────────────────────────
         DeclareLaunchArgument(
-            'num_robots',
-            default_value='1',
-            description='Number of robots to spawn and control'
-        ),
-        DeclareLaunchArgument(
             'test_name',
             default_value='test_navigation',
             description='Name of the test executable from rmf_tests package'
+        ),
+        DeclareLaunchArgument(
+            'test_config',
+            default_value=default_test_config,
+            description='Path to test config YAML (specifies num_robots, etc.)'
         ),
         DeclareLaunchArgument(
             'map_yaml',
@@ -143,22 +183,11 @@ def generate_launch_description():
             description='Delay in seconds before starting the test'
         ),
 
-        # ── Step 0: generate config files ──────────────────────────────
+        # ── Step 0: read test config + generate config files ───────────
         OpaqueFunction(function=generate_config_files),
 
         # ── Step 1: launch the simulator ───────────────────────────────
-        Node(
-            package='robots_cv_sim',
-            executable='sim_node',
-            name='robot_simulator',
-            output='screen',
-            parameters=[{
-                'map_yaml': LaunchConfiguration('map_yaml'),
-                'map_img_path': LaunchConfiguration('map_img_path'),
-                'start_config': LaunchConfiguration('start_config'),
-                'num_robots_override': LaunchConfiguration('num_robots'),
-            }]
-        ),
+        OpaqueFunction(function=generate_sim_node),
 
         # ── Step 2: controllers (1s delay for sim) ─────────────────────
         TimerAction(
@@ -166,7 +195,13 @@ def generate_launch_description():
             actions=[OpaqueFunction(function=generate_controller_nodes)]
         ),
 
-        # ── Step 3: test (configurable delay, default 5s) ─────────────
+        # ── Step 3: fleet adapter (2s delay) ───────────────────────────
+        TimerAction(
+            period=2.0,
+            actions=[OpaqueFunction(function=generate_fleet_adapter_node)]
+        ),
+
+        # ── Step 4: test (configurable delay, default 5s) ─────────────
         TimerAction(
             period=LaunchConfiguration('test_delay'),
             actions=[OpaqueFunction(function=generate_test_process)]

@@ -1,0 +1,26 @@
+[0.021s] Invoking command in '/home/dev/rmf_ws/build/traffic_editor_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/traffic_editor_assets -- -j16 -l16
+[0.173s] Invoked command in '/home/dev/rmf_ws/build/traffic_editor_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/traffic_editor_assets -- -j16 -l16
+[0.182s] Invoking command in '/home/dev/rmf_ws/build/traffic_editor_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/traffic_editor_assets
+[0.193s] -- Install configuration: ""
+[0.194s] -- Execute custom install script
+[0.194s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/map.building.yaml
+[0.194s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/map.png
+[0.194s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/maps.json
+[0.194s] -- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/packages/traffic_editor_assets
+[0.202s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/traffic_editor_assets/assets
+[0.203s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/package_run_dependencies/traffic_editor_assets
+[0.203s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/parent_prefix_path/traffic_editor_assets
+[0.204s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/ament_prefix_path.sh
+[0.204s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/ament_prefix_path.dsv
+[0.204s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/path.sh
+[0.205s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/environment/path.dsv
+[0.205s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.bash
+[0.206s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.sh
+[0.206s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.zsh
+[0.206s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/local_setup.dsv
+[0.207s] -- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/package.dsv
+[0.217s] -- Symlinking: /home/dev/rmf_ws/install/traffic_editor_assets/share/ament_index/resource_index/packages/traffic_editor_assets
+[0.225s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/cmake/traffic_editor_assetsConfig.cmake
+[0.226s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/cmake/traffic_editor_assetsConfig-version.cmake
+[0.226s] -- Up-to-date symlink: /home/dev/rmf_ws/install/traffic_editor_assets/share/traffic_editor_assets/package.xml
+[0.228s] Invoked command in '/home/dev/rmf_ws/build/traffic_editor_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/traffic_editor_assets

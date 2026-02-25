@@ -1,0 +1,30 @@
+[0.567s] Invoking command in '/home/dev/rmf_ws/build/robots_cv_sim': PYTHONPATH=/home/dev/rmf_ws/build/robots_cv_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/rmf_ws/install/robots_cv_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/rmf_ws/build/robots_cv_sim/build --no-deps symlink_data
+[0.779s] running develop
+[0.896s] running egg_info
+[0.896s] creating robots_cv_sim.egg-info
+[0.907s] writing robots_cv_sim.egg-info/PKG-INFO
+[0.907s] writing dependency_links to robots_cv_sim.egg-info/dependency_links.txt
+[0.907s] writing entry points to robots_cv_sim.egg-info/entry_points.txt
+[0.907s] writing requirements to robots_cv_sim.egg-info/requires.txt
+[0.908s] writing top-level names to robots_cv_sim.egg-info/top_level.txt
+[0.908s] writing manifest file 'robots_cv_sim.egg-info/SOURCES.txt'
+[0.941s] reading manifest file 'robots_cv_sim.egg-info/SOURCES.txt'
+[0.941s] writing manifest file 'robots_cv_sim.egg-info/SOURCES.txt'
+[0.941s] running build_ext
+[0.941s] Creating /home/dev/rmf_ws/install/robots_cv_sim/lib/python3.12/site-packages/robots-cv-sim.egg-link (link to .)
+[0.942s] Installing sim_node script to /home/dev/rmf_ws/install/robots_cv_sim/lib/robots_cv_sim
+[0.942s] 
+[0.942s] Installed /home/dev/rmf_ws/build/robots_cv_sim
+[0.942s] running symlink_data
+[0.943s] creating /home/dev/rmf_ws/install/robots_cv_sim/share/ament_index
+[0.943s] creating /home/dev/rmf_ws/install/robots_cv_sim/share/ament_index/resource_index
+[0.943s] creating /home/dev/rmf_ws/install/robots_cv_sim/share/ament_index/resource_index/packages
+[0.943s] symbolically linking /home/dev/rmf_ws/build/robots_cv_sim/resource/robots_cv_sim -> /home/dev/rmf_ws/install/robots_cv_sim/share/ament_index/resource_index/packages
+[0.943s] symbolically linking /home/dev/rmf_ws/build/robots_cv_sim/package.xml -> /home/dev/rmf_ws/install/robots_cv_sim/share/robots_cv_sim
+[0.943s] creating /home/dev/rmf_ws/install/robots_cv_sim/share/robots_cv_sim/launch
+[0.943s] symbolically linking /home/dev/rmf_ws/build/robots_cv_sim/launch/sim.launch.py -> /home/dev/rmf_ws/install/robots_cv_sim/share/robots_cv_sim/launch
+[0.944s] creating /home/dev/rmf_ws/install/robots_cv_sim/share/robots_cv_sim/config
+[0.944s] symbolically linking /home/dev/rmf_ws/build/robots_cv_sim/config/robots.yaml -> /home/dev/rmf_ws/install/robots_cv_sim/share/robots_cv_sim/config
+[0.944s] symbolically linking /home/dev/rmf_ws/build/robots_cv_sim/config/start_config.yaml -> /home/dev/rmf_ws/install/robots_cv_sim/share/robots_cv_sim/config
+[0.944s] symbolically linking /home/dev/rmf_ws/build/robots_cv_sim/config/robots_vertices.yaml -> /home/dev/rmf_ws/install/robots_cv_sim/share/robots_cv_sim/config
+[1.100s] Invoked command in '/home/dev/rmf_ws/build/robots_cv_sim' returned '0': PYTHONPATH=/home/dev/rmf_ws/build/robots_cv_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/rmf_ws/install/robots_cv_sim/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dev/rmf_ws/build/robots_cv_sim/build --no-deps symlink_data

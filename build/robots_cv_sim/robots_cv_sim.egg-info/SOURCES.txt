@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+config/robots.yaml
+config/robots_vertices.yaml
+config/start_config.yaml
+launch/sim.launch.py
+resource/robots_cv_sim
+robots_cv_sim/__init__.py
+robots_cv_sim/sim_node.py
+robots_cv_sim.egg-info/PKG-INFO
+robots_cv_sim.egg-info/SOURCES.txt
+robots_cv_sim.egg-info/dependency_links.txt
+robots_cv_sim.egg-info/entry_points.txt
+robots_cv_sim.egg-info/requires.txt
+robots_cv_sim.egg-info/top_level.txt
+robots_cv_sim.egg-info/zip-safe

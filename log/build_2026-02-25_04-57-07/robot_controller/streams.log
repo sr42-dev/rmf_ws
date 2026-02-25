@@ -1,0 +1,59 @@
+[0.008s] Invoking command in '/home/dev/rmf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/dev/rmf_ws/src/robot_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/rmf_ws/install/robot_controller
+[0.162s] -- The C compiler identification is GNU 13.3.0
+[0.162s] -- The CXX compiler identification is GNU 13.3.0
+[0.162s] -- Detecting C compiler ABI info
+[0.224s] -- Detecting C compiler ABI info - done
+[0.235s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.235s] -- Detecting C compile features
+[0.235s] -- Detecting C compile features - done
+[0.245s] -- Detecting CXX compiler ABI info
+[0.350s] -- Detecting CXX compiler ABI info - done
+[0.357s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.357s] -- Detecting CXX compile features
+[0.357s] -- Detecting CXX compile features - done
+[0.360s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.479s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.543s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.575s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.612s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.624s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.641s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.657s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.725s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.727s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.809s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.824s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.844s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.906s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.943s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.101s] -- Found rmf_fleet_msgs: 3.3.1 (/opt/ros/jazzy/share/rmf_fleet_msgs/cmake)
+[1.102s] -- Configuring done (1.0s)
+[1.102s] -- Generating done (0.0s)
+[1.102s] -- Build files have been written to: /home/dev/rmf_ws/build/robot_controller
+[1.108s] Invoked command in '/home/dev/rmf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/dev/rmf_ws/src/robot_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev/rmf_ws/install/robot_controller
+[1.109s] Invoking command in '/home/dev/rmf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/robot_controller -- -j16 -l16
+[1.179s] [ 50%] Building CXX object CMakeFiles/controller.dir/src/controller_node.cpp.o
+[11.370s] [100%] Linking CXX executable controller
+[11.768s] [100%] Built target controller
+[11.781s] Invoked command in '/home/dev/rmf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/dev/rmf_ws/build/robot_controller -- -j16 -l16
+[11.782s] Invoking command in '/home/dev/rmf_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/robot_controller
+[11.794s] -- Install configuration: ""
+[11.794s] -- Execute custom install script
+[11.794s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/lib/robot_controller/controller
+[11.805s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/launch/controllers.launch.py
+[11.819s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+[11.829s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+[11.837s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+[11.851s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+[11.863s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/path.sh
+[11.876s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/path.dsv
+[11.882s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.bash
+[11.898s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.sh
+[11.911s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.zsh
+[11.923s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.dsv
+[11.934s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/package.dsv
+[11.947s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+[11.960s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+[11.966s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+[11.973s] -- Symlinking: /home/dev/rmf_ws/install/robot_controller/share/robot_controller/package.xml
+[11.988s] Invoked command in '/home/dev/rmf_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/dev/rmf_ws/build/robot_controller

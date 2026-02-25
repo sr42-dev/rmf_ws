@@ -1,0 +1,17 @@
+/home/dev/rmf_ws/install/robot_controller/lib/robot_controller/controller
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/launch/controllers.launch.py
+/home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+/home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/path.sh
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/environment/path.dsv
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.bash
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.sh
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.zsh
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/local_setup.dsv
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/package.dsv
+/home/dev/rmf_ws/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+/home/dev/rmf_ws/install/robot_controller/share/robot_controller/package.xml

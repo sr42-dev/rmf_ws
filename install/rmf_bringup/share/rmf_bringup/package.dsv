@@ -1,0 +1,9 @@
+source;share/rmf_bringup/hook/pythonpath.ps1
+source;share/rmf_bringup/hook/pythonpath.dsv
+source;share/rmf_bringup/hook/pythonpath.sh
+source;share/rmf_bringup/hook/ament_prefix_path.ps1
+source;share/rmf_bringup/hook/ament_prefix_path.dsv
+source;share/rmf_bringup/hook/ament_prefix_path.sh
+source;../../build/rmf_bringup/share/rmf_bringup/hook/pythonpath_develop.ps1
+source;../../build/rmf_bringup/share/rmf_bringup/hook/pythonpath_develop.dsv
+source;../../build/rmf_bringup/share/rmf_bringup/hook/pythonpath_develop.sh

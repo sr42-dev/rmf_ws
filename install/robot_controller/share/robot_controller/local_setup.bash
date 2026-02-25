@@ -1,0 +1,1 @@
+/home/dev/rmf_ws/build/robot_controller/ament_cmake_environment_hooks/local_setup.bash
