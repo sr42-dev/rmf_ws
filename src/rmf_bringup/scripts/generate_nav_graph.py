@@ -49,9 +49,21 @@ def main():
 
         lanes_out = []
         for lane in level_data.get('lanes', []):
-            # Building YAML lane format: [start_idx, end_idx, ...]
+            # Building YAML lane format: [start_idx, end_idx, {props}]
             if len(lane) >= 2:
                 lane_options = {}
+                # Propagate bidirectional flag from building YAML
+                # Property format: {bidirectional: [type_id, value]}
+                if len(lane) > 2 and isinstance(lane[2], dict):
+                    bidir_prop = lane[2].get('bidirectional', [4, True])
+                    if isinstance(bidir_prop, list) and len(bidir_prop) >= 2:
+                        lane_options['bidirectional'] = bool(bidir_prop[1])
+                    elif isinstance(bidir_prop, bool):
+                        lane_options['bidirectional'] = bidir_prop
+                    else:
+                        lane_options['bidirectional'] = True
+                else:
+                    lane_options['bidirectional'] = True
                 lanes_out.append([lane[0], lane[1], lane_options])
 
         nav_graph['levels'][level_name] = {

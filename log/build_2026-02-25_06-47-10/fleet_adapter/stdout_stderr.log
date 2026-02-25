@@ -1,0 +1,48 @@
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found rmf_fleet_msgs: 3.3.1 (/opt/ros/jazzy/share/rmf_fleet_msgs/cmake)
+-- Found rmf_task_msgs: 3.3.1 (/opt/ros/jazzy/share/rmf_task_msgs/cmake)
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rmf_traffic_ros2: 2.7.2 (/opt/ros/jazzy/share/rmf_traffic_ros2/cmake)
+-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+-- Checking for module 'proj'
+--   Found proj, version 9.4.0
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dev/rmf_ws/build/fleet_adapter
+[ 50%] Building CXX object CMakeFiles/fleet_adapter_node.dir/src/fleet_adapter_node.cpp.o
+/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp: In constructor ‘FleetAdapterNode::FleetAdapterNode()’:
+/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:159:40: error: ‘Linear’ is not a member of ‘rmf_traffic::agv::VehicleTraits’
+  159 |       rmf_traffic::agv::VehicleTraits::Linear{linear_vel, linear_accel},
+      |                                        ^~~~~~
+/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:160:40: error: ‘Rotational’ is not a member of ‘rmf_traffic::agv::VehicleTraits’
+  160 |       rmf_traffic::agv::VehicleTraits::Rotational{angular_vel, angular_accel},
+      |                                        ^~~~~~~~~~
+/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:147:18: warning: unused variable ‘linear_vel’ [-Wunused-variable]
+  147 |     const double linear_vel = 2.0;     // m/s
+      |                  ^~~~~~~~~~
+/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:148:18: warning: unused variable ‘linear_accel’ [-Wunused-variable]
+  148 |     const double linear_accel = 0.5;   // m/s²
+      |                  ^~~~~~~~~~~~
+/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:149:18: warning: unused variable ‘angular_vel’ [-Wunused-variable]
+  149 |     const double angular_vel = 1.5;    // rad/s
+      |                  ^~~~~~~~~~~
+/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:150:18: warning: unused variable ‘angular_accel’ [-Wunused-variable]
+  150 |     const double angular_accel = 0.6;  // rad/s²
+      |                  ^~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/fleet_adapter_node.dir/build.make:76: CMakeFiles/fleet_adapter_node.dir/src/fleet_adapter_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/fleet_adapter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

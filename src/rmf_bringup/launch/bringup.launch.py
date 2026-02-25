@@ -195,13 +195,27 @@ def generate_launch_description():
             actions=[OpaqueFunction(function=generate_controller_nodes)]
         ),
 
-        # ── Step 3: fleet adapter (2s delay) ───────────────────────────
+        # ── Step 3: rmf_traffic_schedule (1.5s delay) ──────────────────
+        # Must be running before the fleet adapter connects to the schedule
         TimerAction(
-            period=2.0,
+            period=1.5,
+            actions=[
+                Node(
+                    package='rmf_traffic_ros2',
+                    executable='rmf_traffic_schedule',
+                    name='rmf_traffic_schedule',
+                    output='screen',
+                )
+            ]
+        ),
+
+        # ── Step 4: fleet adapter (3s delay — after schedule is up) ───
+        TimerAction(
+            period=3.0,
             actions=[OpaqueFunction(function=generate_fleet_adapter_node)]
         ),
 
-        # ── Step 4: test (configurable delay, default 5s) ─────────────
+        # ── Step 5: test (configurable delay, default 5s) ─────────────
         TimerAction(
             period=LaunchConfiguration('test_delay'),
             actions=[OpaqueFunction(function=generate_test_process)]

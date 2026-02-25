@@ -1,0 +1,164 @@
+[0.000000] (-) TimerEvent: {}
+[0.000083] (-) JobUnselected: {'identifier': 'rmf_bringup'}
+[0.000128] (-) JobUnselected: {'identifier': 'rmf_tests'}
+[0.000158] (-) JobUnselected: {'identifier': 'robot_controller'}
+[0.000408] (-) JobUnselected: {'identifier': 'robots_cv_sim'}
+[0.000685] (-) JobUnselected: {'identifier': 'traffic_editor_assets'}
+[0.000731] (fleet_adapter) JobQueued: {'identifier': 'fleet_adapter', 'dependencies': OrderedDict()}
+[0.000766] (fleet_adapter) JobStarted: {'identifier': 'fleet_adapter'}
+[0.008679] (fleet_adapter) JobProgress: {'identifier': 'fleet_adapter', 'progress': 'cmake'}
+[0.009232] (fleet_adapter) JobProgress: {'identifier': 'fleet_adapter', 'progress': 'build'}
+[0.009642] (fleet_adapter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/rmf_ws/build/fleet_adapter', '--', '-j16', '-l16'], 'cwd': '/home/dev/rmf_ws/build/fleet_adapter', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/fleet_adapter', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.096951] (fleet_adapter) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/fleet_adapter_node.dir/src/fleet_adapter_node.cpp.o\n'}
+[0.099803] (-) TimerEvent: {}
+[0.199986] (-) TimerEvent: {}
+[0.300194] (-) TimerEvent: {}
+[0.400401] (-) TimerEvent: {}
+[0.500955] (-) TimerEvent: {}
+[0.601750] (-) TimerEvent: {}
+[0.701959] (-) TimerEvent: {}
+[0.802198] (-) TimerEvent: {}
+[0.902409] (-) TimerEvent: {}
+[1.002617] (-) TimerEvent: {}
+[1.102828] (-) TimerEvent: {}
+[1.203038] (-) TimerEvent: {}
+[1.303907] (-) TimerEvent: {}
+[1.404151] (-) TimerEvent: {}
+[1.504373] (-) TimerEvent: {}
+[1.604602] (-) TimerEvent: {}
+[1.704817] (-) TimerEvent: {}
+[1.805036] (-) TimerEvent: {}
+[1.905237] (-) TimerEvent: {}
+[2.005445] (-) TimerEvent: {}
+[2.105656] (-) TimerEvent: {}
+[2.205862] (-) TimerEvent: {}
+[2.306073] (-) TimerEvent: {}
+[2.406282] (-) TimerEvent: {}
+[2.506498] (-) TimerEvent: {}
+[2.606711] (-) TimerEvent: {}
+[2.706925] (-) TimerEvent: {}
+[2.807133] (-) TimerEvent: {}
+[2.907340] (-) TimerEvent: {}
+[3.007552] (-) TimerEvent: {}
+[3.107766] (-) TimerEvent: {}
+[3.207986] (-) TimerEvent: {}
+[3.308202] (-) TimerEvent: {}
+[3.408418] (-) TimerEvent: {}
+[3.508629] (-) TimerEvent: {}
+[3.608838] (-) TimerEvent: {}
+[3.709057] (-) TimerEvent: {}
+[3.809270] (-) TimerEvent: {}
+[3.909465] (-) TimerEvent: {}
+[4.009686] (-) TimerEvent: {}
+[4.109894] (-) TimerEvent: {}
+[4.210100] (-) TimerEvent: {}
+[4.310286] (-) TimerEvent: {}
+[4.410492] (-) TimerEvent: {}
+[4.510702] (-) TimerEvent: {}
+[4.610918] (-) TimerEvent: {}
+[4.711125] (-) TimerEvent: {}
+[4.811334] (-) TimerEvent: {}
+[4.911545] (-) TimerEvent: {}
+[5.011756] (-) TimerEvent: {}
+[5.111962] (-) TimerEvent: {}
+[5.212169] (-) TimerEvent: {}
+[5.312387] (-) TimerEvent: {}
+[5.412610] (-) TimerEvent: {}
+[5.512830] (-) TimerEvent: {}
+[5.613321] (-) TimerEvent: {}
+[5.713547] (-) TimerEvent: {}
+[5.813771] (-) TimerEvent: {}
+[5.913981] (-) TimerEvent: {}
+[6.014191] (-) TimerEvent: {}
+[6.114402] (-) TimerEvent: {}
+[6.214611] (-) TimerEvent: {}
+[6.314820] (-) TimerEvent: {}
+[6.415028] (-) TimerEvent: {}
+[6.515233] (-) TimerEvent: {}
+[6.615448] (-) TimerEvent: {}
+[6.715661] (-) TimerEvent: {}
+[6.815872] (-) TimerEvent: {}
+[6.916080] (-) TimerEvent: {}
+[7.016288] (-) TimerEvent: {}
+[7.116493] (-) TimerEvent: {}
+[7.216703] (-) TimerEvent: {}
+[7.316913] (-) TimerEvent: {}
+[7.417191] (-) TimerEvent: {}
+[7.517382] (-) TimerEvent: {}
+[7.617562] (-) TimerEvent: {}
+[7.717770] (-) TimerEvent: {}
+[7.817974] (-) TimerEvent: {}
+[7.918182] (-) TimerEvent: {}
+[8.018392] (-) TimerEvent: {}
+[8.118594] (-) TimerEvent: {}
+[8.218797] (-) TimerEvent: {}
+[8.319001] (-) TimerEvent: {}
+[8.419203] (-) TimerEvent: {}
+[8.519410] (-) TimerEvent: {}
+[8.619619] (-) TimerEvent: {}
+[8.719825] (-) TimerEvent: {}
+[8.820033] (-) TimerEvent: {}
+[8.920299] (-) TimerEvent: {}
+[9.020516] (-) TimerEvent: {}
+[9.120730] (-) TimerEvent: {}
+[9.220941] (-) TimerEvent: {}
+[9.321147] (-) TimerEvent: {}
+[9.421366] (-) TimerEvent: {}
+[9.521575] (-) TimerEvent: {}
+[9.621789] (-) TimerEvent: {}
+[9.721998] (-) TimerEvent: {}
+[9.822203] (-) TimerEvent: {}
+[9.922411] (-) TimerEvent: {}
+[10.022627] (-) TimerEvent: {}
+[10.122832] (-) TimerEvent: {}
+[10.223037] (-) TimerEvent: {}
+[10.323247] (-) TimerEvent: {}
+[10.423427] (-) TimerEvent: {}
+[10.523636] (-) TimerEvent: {}
+[10.623841] (-) TimerEvent: {}
+[10.724045] (-) TimerEvent: {}
+[10.824504] (-) TimerEvent: {}
+[10.924711] (-) TimerEvent: {}
+[11.024892] (-) TimerEvent: {}
+[11.125080] (-) TimerEvent: {}
+[11.225454] (-) TimerEvent: {}
+[11.325674] (-) TimerEvent: {}
+[11.425895] (-) TimerEvent: {}
+[11.526112] (-) TimerEvent: {}
+[11.626323] (-) TimerEvent: {}
+[11.726532] (-) TimerEvent: {}
+[11.785340] (fleet_adapter) StdoutLine: {'line': b'[100%] Linking CXX executable fleet_adapter_node\n'}
+[11.826672] (-) TimerEvent: {}
+[11.926886] (-) TimerEvent: {}
+[12.027110] (-) TimerEvent: {}
+[12.127336] (-) TimerEvent: {}
+[12.227554] (-) TimerEvent: {}
+[12.327773] (-) TimerEvent: {}
+[12.427994] (-) TimerEvent: {}
+[12.528209] (-) TimerEvent: {}
+[12.587466] (fleet_adapter) StdoutLine: {'line': b'[100%] Built target fleet_adapter_node\n'}
+[12.602483] (fleet_adapter) CommandEnded: {'returncode': 0}
+[12.603365] (fleet_adapter) JobProgress: {'identifier': 'fleet_adapter', 'progress': 'install'}
+[12.611275] (fleet_adapter) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev/rmf_ws/build/fleet_adapter'], 'cwd': '/home/dev/rmf_ws/build/fleet_adapter', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/fleet_adapter', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[12.617671] (fleet_adapter) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.618029] (fleet_adapter) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.618278] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/lib/fleet_adapter/fleet_adapter_node\n'}
+[12.618540] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/ament_index/resource_index/package_run_dependencies/fleet_adapter\n'}
+[12.618902] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/ament_index/resource_index/parent_prefix_path/fleet_adapter\n'}
+[12.619204] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/ament_prefix_path.sh\n'}
+[12.619578] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/ament_prefix_path.dsv\n'}
+[12.619892] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/path.sh\n'}
+[12.620012] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/environment/path.dsv\n'}
+[12.620134] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.bash\n'}
+[12.620238] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.sh\n'}
+[12.620339] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.zsh\n'}
+[12.620437] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/local_setup.dsv\n'}
+[12.620545] (fleet_adapter) StdoutLine: {'line': b'-- Symlinking: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/package.dsv\n'}
+[12.628302] (-) TimerEvent: {}
+[12.630450] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/ament_index/resource_index/packages/fleet_adapter\n'}
+[12.630928] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/cmake/fleet_adapterConfig.cmake\n'}
+[12.631159] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/cmake/fleet_adapterConfig-version.cmake\n'}
+[12.631360] (fleet_adapter) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/rmf_ws/install/fleet_adapter/share/fleet_adapter/package.xml\n'}
+[12.632703] (fleet_adapter) CommandEnded: {'returncode': 0}
+[12.650317] (fleet_adapter) JobEnded: {'identifier': 'fleet_adapter', 'rc': 0}
+[12.650945] (-) EventReactorShutdown: {}

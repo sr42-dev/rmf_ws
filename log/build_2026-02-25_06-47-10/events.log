@@ -1,0 +1,139 @@
+[0.000000] (-) TimerEvent: {}
+[0.000177] (-) JobUnselected: {'identifier': 'rmf_tests'}
+[0.000226] (-) JobUnselected: {'identifier': 'robot_controller'}
+[0.000256] (-) JobUnselected: {'identifier': 'robots_cv_sim'}
+[0.000501] (-) JobUnselected: {'identifier': 'traffic_editor_assets'}
+[0.000678] (fleet_adapter) JobQueued: {'identifier': 'fleet_adapter', 'dependencies': OrderedDict()}
+[0.000726] (rmf_bringup) JobQueued: {'identifier': 'rmf_bringup', 'dependencies': OrderedDict({'fleet_adapter': '/home/dev/rmf_ws/install/fleet_adapter', 'robot_controller': '/home/dev/rmf_ws/install/robot_controller', 'robots_cv_sim': '/home/dev/rmf_ws/install/robots_cv_sim', 'traffic_editor_assets': '/home/dev/rmf_ws/install/traffic_editor_assets', 'rmf_tests': '/home/dev/rmf_ws/install/rmf_tests'})}
+[0.000791] (fleet_adapter) JobStarted: {'identifier': 'fleet_adapter'}
+[0.008170] (fleet_adapter) JobProgress: {'identifier': 'fleet_adapter', 'progress': 'cmake'}
+[0.008891] (fleet_adapter) JobProgress: {'identifier': 'fleet_adapter', 'progress': 'build'}
+[0.009399] (fleet_adapter) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/rmf_ws/build/fleet_adapter', '--', '-j16', '-l16'], 'cwd': '/home/dev/rmf_ws/build/fleet_adapter', 'env': OrderedDict({'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/fleet_adapter', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.043277] (fleet_adapter) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099860] (-) TimerEvent: {}
+[0.200076] (-) TimerEvent: {}
+[0.223303] (fleet_adapter) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.235423] (fleet_adapter) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.255906] (fleet_adapter) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.262338] (fleet_adapter) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.270793] (fleet_adapter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.281062] (fleet_adapter) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300179] (-) TimerEvent: {}
+[0.329468] (fleet_adapter) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.330467] (fleet_adapter) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.390201] (fleet_adapter) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.400278] (-) TimerEvent: {}
+[0.439500] (fleet_adapter) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.450039] (fleet_adapter) StdoutLine: {'line': b'-- Found rmf_fleet_msgs: 3.3.1 (/opt/ros/jazzy/share/rmf_fleet_msgs/cmake)\n'}
+[0.463636] (fleet_adapter) StdoutLine: {'line': b'-- Found rmf_task_msgs: 3.3.1 (/opt/ros/jazzy/share/rmf_task_msgs/cmake)\n'}
+[0.500409] (-) TimerEvent: {}
+[0.534169] (fleet_adapter) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[0.545605] (fleet_adapter) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.548732] (fleet_adapter) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.600537] (-) TimerEvent: {}
+[0.648556] (fleet_adapter) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.650381] (fleet_adapter) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.655388] (fleet_adapter) StdoutLine: {'line': b'-- Found rmf_traffic_ros2: 2.7.2 (/opt/ros/jazzy/share/rmf_traffic_ros2/cmake)\n'}
+[0.660481] (fleet_adapter) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") \n'}
+[0.661086] (fleet_adapter) StdoutLine: {'line': b"-- Checking for module 'proj'\n"}
+[0.676255] (fleet_adapter) StdoutLine: {'line': b'--   Found proj, version 9.4.0\n'}
+[0.700638] (-) TimerEvent: {}
+[0.800855] (-) TimerEvent: {}
+[0.901056] (-) TimerEvent: {}
+[0.910289] (fleet_adapter) StdoutLine: {'line': b'-- Configuring done (0.9s)\n'}
+[0.949925] (fleet_adapter) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.953367] (fleet_adapter) StdoutLine: {'line': b'-- Build files have been written to: /home/dev/rmf_ws/build/fleet_adapter\n'}
+[1.001180] (-) TimerEvent: {}
+[1.013534] (fleet_adapter) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/fleet_adapter_node.dir/src/fleet_adapter_node.cpp.o\n'}
+[1.101306] (-) TimerEvent: {}
+[1.201511] (-) TimerEvent: {}
+[1.301745] (-) TimerEvent: {}
+[1.401947] (-) TimerEvent: {}
+[1.502128] (-) TimerEvent: {}
+[1.602335] (-) TimerEvent: {}
+[1.702548] (-) TimerEvent: {}
+[1.802764] (-) TimerEvent: {}
+[1.902989] (-) TimerEvent: {}
+[2.003242] (-) TimerEvent: {}
+[2.103480] (-) TimerEvent: {}
+[2.203688] (-) TimerEvent: {}
+[2.303914] (-) TimerEvent: {}
+[2.404120] (-) TimerEvent: {}
+[2.504531] (-) TimerEvent: {}
+[2.604743] (-) TimerEvent: {}
+[2.704952] (-) TimerEvent: {}
+[2.805160] (-) TimerEvent: {}
+[2.905369] (-) TimerEvent: {}
+[3.005578] (-) TimerEvent: {}
+[3.105788] (-) TimerEvent: {}
+[3.206011] (-) TimerEvent: {}
+[3.306229] (-) TimerEvent: {}
+[3.406441] (-) TimerEvent: {}
+[3.506651] (-) TimerEvent: {}
+[3.606860] (-) TimerEvent: {}
+[3.707069] (-) TimerEvent: {}
+[3.807278] (-) TimerEvent: {}
+[3.907517] (-) TimerEvent: {}
+[4.007756] (-) TimerEvent: {}
+[4.107968] (-) TimerEvent: {}
+[4.208128] (-) TimerEvent: {}
+[4.213062] (fleet_adapter) StderrLine: {'line': b'/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp: In constructor \xe2\x80\x98FleetAdapterNode::FleetAdapterNode()\xe2\x80\x99:\n'}
+[4.213329] (fleet_adapter) StderrLine: {'line': b'/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:159:40: error: \xe2\x80\x98Linear\xe2\x80\x99 is not a member of \xe2\x80\x98rmf_traffic::agv::VehicleTraits\xe2\x80\x99\n'}
+[4.213456] (fleet_adapter) StderrLine: {'line': b'  159 |       rmf_traffic::agv::VehicleTraits::Linear{linear_vel, linear_accel},\n'}
+[4.213565] (fleet_adapter) StderrLine: {'line': b'      |                                        ^~~~~~\n'}
+[4.213669] (fleet_adapter) StderrLine: {'line': b'/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:160:40: error: \xe2\x80\x98Rotational\xe2\x80\x99 is not a member of \xe2\x80\x98rmf_traffic::agv::VehicleTraits\xe2\x80\x99\n'}
+[4.213774] (fleet_adapter) StderrLine: {'line': b'  160 |       rmf_traffic::agv::VehicleTraits::Rotational{angular_vel, angular_accel},\n'}
+[4.213888] (fleet_adapter) StderrLine: {'line': b'      |                                        ^~~~~~~~~~\n'}
+[4.231648] (fleet_adapter) StderrLine: {'line': b'/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:147:18: warning: unused variable \xe2\x80\x98linear_vel\xe2\x80\x99 [-Wunused-variable]\n'}
+[4.231886] (fleet_adapter) StderrLine: {'line': b'  147 |     const double linear_vel = 2.0;     // m/s\n'}
+[4.232009] (fleet_adapter) StderrLine: {'line': b'      |                  ^~~~~~~~~~\n'}
+[4.232175] (fleet_adapter) StderrLine: {'line': b'/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:148:18: warning: unused variable \xe2\x80\x98linear_accel\xe2\x80\x99 [-Wunused-variable]\n'}
+[4.232290] (fleet_adapter) StderrLine: {'line': b'  148 |     const double linear_accel = 0.5;   // m/s\xc2\xb2\n'}
+[4.232395] (fleet_adapter) StderrLine: {'line': b'      |                  ^~~~~~~~~~~~\n'}
+[4.232497] (fleet_adapter) StderrLine: {'line': b'/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:149:18: warning: unused variable \xe2\x80\x98angular_vel\xe2\x80\x99 [-Wunused-variable]\n'}
+[4.232601] (fleet_adapter) StderrLine: {'line': b'  149 |     const double angular_vel = 1.5;    // rad/s\n'}
+[4.232704] (fleet_adapter) StderrLine: {'line': b'      |                  ^~~~~~~~~~~\n'}
+[4.232808] (fleet_adapter) StderrLine: {'line': b'/home/dev/rmf_ws/src/fleet_adapter/src/fleet_adapter_node.cpp:150:18: warning: unused variable \xe2\x80\x98angular_accel\xe2\x80\x99 [-Wunused-variable]\n'}
+[4.232912] (fleet_adapter) StderrLine: {'line': b'  150 |     const double angular_accel = 0.6;  // rad/s\xc2\xb2\n'}
+[4.233014] (fleet_adapter) StderrLine: {'line': b'      |                  ^~~~~~~~~~~~~\n'}
+[4.308252] (-) TimerEvent: {}
+[4.408463] (-) TimerEvent: {}
+[4.508656] (-) TimerEvent: {}
+[4.608877] (-) TimerEvent: {}
+[4.709074] (-) TimerEvent: {}
+[4.809262] (-) TimerEvent: {}
+[4.909509] (-) TimerEvent: {}
+[5.009726] (-) TimerEvent: {}
+[5.109933] (-) TimerEvent: {}
+[5.210142] (-) TimerEvent: {}
+[5.310348] (-) TimerEvent: {}
+[5.410559] (-) TimerEvent: {}
+[5.510744] (-) TimerEvent: {}
+[5.610950] (-) TimerEvent: {}
+[5.711160] (-) TimerEvent: {}
+[5.811344] (-) TimerEvent: {}
+[5.911551] (-) TimerEvent: {}
+[6.011738] (-) TimerEvent: {}
+[6.111934] (-) TimerEvent: {}
+[6.212155] (-) TimerEvent: {}
+[6.312363] (-) TimerEvent: {}
+[6.412568] (-) TimerEvent: {}
+[6.512779] (-) TimerEvent: {}
+[6.612967] (-) TimerEvent: {}
+[6.713172] (-) TimerEvent: {}
+[6.813389] (-) TimerEvent: {}
+[6.913596] (-) TimerEvent: {}
+[7.013812] (-) TimerEvent: {}
+[7.114037] (-) TimerEvent: {}
+[7.214245] (-) TimerEvent: {}
+[7.314455] (-) TimerEvent: {}
+[7.414661] (-) TimerEvent: {}
+[7.514847] (-) TimerEvent: {}
+[7.615042] (-) TimerEvent: {}
+[7.693564] (fleet_adapter) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/fleet_adapter_node.dir/build.make:76: CMakeFiles/fleet_adapter_node.dir/src/fleet_adapter_node.cpp.o] Error 1\n'}
+[7.693964] (fleet_adapter) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/fleet_adapter_node.dir/all] Error 2\n'}
+[7.694252] (fleet_adapter) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.696640] (fleet_adapter) CommandEnded: {'returncode': 2}
+[7.711411] (fleet_adapter) JobEnded: {'identifier': 'fleet_adapter', 'rc': 2}
+[7.712189] (rmf_bringup) JobSkipped: {'identifier': 'rmf_bringup'}
+[7.712235] (-) EventReactorShutdown: {}

@@ -1,0 +1,14 @@
+- operation: Add
+  participant_description:
+    name: robot_1
+    group: fleet_1
+    responsiveness: Responsive
+    profile:
+      footprint:
+        type: Circle
+        index: 0
+      vicinity:
+        type: Circle
+        index: 0
+      shape_context:
+        - 0.29999999999999999

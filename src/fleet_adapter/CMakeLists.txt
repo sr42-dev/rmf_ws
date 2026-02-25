@@ -11,6 +11,10 @@ find_package(std_msgs REQUIRED)
 find_package(rmf_fleet_msgs REQUIRED)
 find_package(rmf_task_msgs REQUIRED)
 find_package(yaml-cpp REQUIRED)
+find_package(rmf_traffic REQUIRED)
+find_package(rmf_traffic_ros2 REQUIRED)
+find_package(rmf_utils REQUIRED)
+find_package(Eigen3 REQUIRED)
 
 add_executable(fleet_adapter_node src/fleet_adapter_node.cpp)
 
@@ -19,9 +23,14 @@ ament_target_dependencies(fleet_adapter_node
   std_msgs
   rmf_fleet_msgs
   rmf_task_msgs
+  rmf_traffic_ros2
 )
 
-target_link_libraries(fleet_adapter_node yaml-cpp)
+target_link_libraries(fleet_adapter_node
+  yaml-cpp
+  rmf_traffic::rmf_traffic
+  Eigen3::Eigen
+)
 
 install(TARGETS fleet_adapter_node
   DESTINATION lib/${PROJECT_NAME}

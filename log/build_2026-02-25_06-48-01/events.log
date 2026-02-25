@@ -1,0 +1,35 @@
+[0.000000] (-) TimerEvent: {}
+[0.000343] (-) JobUnselected: {'identifier': 'fleet_adapter'}
+[0.000399] (-) JobUnselected: {'identifier': 'rmf_tests'}
+[0.000430] (-) JobUnselected: {'identifier': 'robot_controller'}
+[0.000721] (-) JobUnselected: {'identifier': 'robots_cv_sim'}
+[0.000788] (-) JobUnselected: {'identifier': 'traffic_editor_assets'}
+[0.000819] (rmf_bringup) JobQueued: {'identifier': 'rmf_bringup', 'dependencies': OrderedDict({'fleet_adapter': '/home/dev/rmf_ws/install/fleet_adapter', 'robot_controller': '/home/dev/rmf_ws/install/robot_controller', 'robots_cv_sim': '/home/dev/rmf_ws/install/robots_cv_sim', 'traffic_editor_assets': '/home/dev/rmf_ws/install/traffic_editor_assets', 'rmf_tests': '/home/dev/rmf_ws/install/rmf_tests'})}
+[0.000887] (rmf_bringup) JobStarted: {'identifier': 'rmf_bringup'}
+[0.099784] (-) TimerEvent: {}
+[0.199980] (-) TimerEvent: {}
+[0.300179] (-) TimerEvent: {}
+[0.400374] (-) TimerEvent: {}
+[0.500571] (-) TimerEvent: {}
+[0.570602] (rmf_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/dev/rmf_ws/build/rmf_bringup/build', '--no-deps', 'symlink_data'], 'cwd': '/home/dev/rmf_ws/build/rmf_bringup', 'env': {'HOSTNAME': 'legion5pro', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dev', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/dev/rmf_ws/install/rmf_tests:/home/dev/rmf_ws/install/traffic_editor_assets:/home/dev/rmf_ws/install/robots_cv_sim:/home/dev/rmf_ws/install/robot_controller:/home/dev/rmf_ws/install/fleet_adapter:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/dev/rmf_ws/build/rmf_bringup', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/home/dev/rmf_ws/build/rmf_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dev/rmf_ws/install/rmf_bringup/lib/python3.12/site-packages:/home/dev/rmf_ws/build/rmf_tests:/home/dev/rmf_ws/install/rmf_tests/lib/python3.12/site-packages:/home/dev/rmf_ws/build/robots_cv_sim:/home/dev/rmf_ws/install/robots_cv_sim/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/dev/rmf_ws/install/traffic_editor_assets:/home/dev/rmf_ws/install/robot_controller:/home/dev/rmf_ws/install/fleet_adapter:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.600695] (-) TimerEvent: {}
+[0.700892] (-) TimerEvent: {}
+[0.791691] (rmf_bringup) StdoutLine: {'line': b'running develop\n'}
+[0.801026] (-) TimerEvent: {}
+[0.901224] (-) TimerEvent: {}
+[0.916629] (rmf_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[0.928356] (rmf_bringup) StdoutLine: {'line': b'writing rmf_bringup.egg-info/PKG-INFO\n'}
+[0.928657] (rmf_bringup) StdoutLine: {'line': b'writing dependency_links to rmf_bringup.egg-info/dependency_links.txt\n'}
+[0.928865] (rmf_bringup) StdoutLine: {'line': b'writing requirements to rmf_bringup.egg-info/requires.txt\n'}
+[0.928982] (rmf_bringup) StdoutLine: {'line': b'writing top-level names to rmf_bringup.egg-info/top_level.txt\n'}
+[0.951727] (rmf_bringup) StdoutLine: {'line': b"reading manifest file 'rmf_bringup.egg-info/SOURCES.txt'\n"}
+[0.952200] (rmf_bringup) StdoutLine: {'line': b"writing manifest file 'rmf_bringup.egg-info/SOURCES.txt'\n"}
+[0.964272] (rmf_bringup) StdoutLine: {'line': b'running build_ext\n'}
+[0.964463] (rmf_bringup) StdoutLine: {'line': b'Creating /home/dev/rmf_ws/install/rmf_bringup/lib/python3.12/site-packages/rmf-bringup.egg-link (link to .)\n'}
+[0.964793] (rmf_bringup) StdoutLine: {'line': b'\n'}
+[0.965089] (rmf_bringup) StdoutLine: {'line': b'Installed /home/dev/rmf_ws/build/rmf_bringup\n'}
+[0.965331] (rmf_bringup) StdoutLine: {'line': b'running symlink_data\n'}
+[0.994977] (rmf_bringup) CommandEnded: {'returncode': 0}
+[1.002355] (-) TimerEvent: {}
+[1.008356] (rmf_bringup) JobEnded: {'identifier': 'rmf_bringup', 'rc': 0}
+[1.009014] (-) EventReactorShutdown: {}
